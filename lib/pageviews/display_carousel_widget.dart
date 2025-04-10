@@ -11,6 +11,8 @@ class DisplayCarouselWidget extends StatelessWidget {
     'assets/images/6.png',
   ];
 
+  DisplayCarouselWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,6 +22,7 @@ class DisplayCarouselWidget extends StatelessWidget {
         itemCount: imagesList.length,
         itemBuilder: (BuildContext context, int index, int pageViewIndex) {
           return Container(
+
               child: Image.asset(
                 imagesList[index]
               ),
@@ -29,7 +32,7 @@ class DisplayCarouselWidget extends StatelessWidget {
           autoPlay: true,
           scrollDirection:Axis.horizontal,
           aspectRatio: 1.5,
-          viewportFraction: 1,
+          viewportFraction: 0.75,
           onPageChanged: (index , reason){
 
           }
