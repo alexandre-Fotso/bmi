@@ -16,13 +16,12 @@ class DisplayCarouselWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 240,
+      height: 241,
       alignment: Alignment.center,
       child: CarouselSlider.builder(
         itemCount: imagesList.length,
         itemBuilder: (BuildContext context, int index, int pageViewIndex) {
           return Container(
-
               child: Image.asset(
                 imagesList[index]
               ),
