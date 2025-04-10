@@ -15,7 +15,7 @@ class DisplayCarouselWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Container( 
       height: 241,
       alignment: Alignment.center,
       child: CarouselSlider.builder(
